@@ -47,6 +47,10 @@ To build a globally generalizable model across distinct global forest architectu
 2. **Cerrado, Brazil** (Jun–Dec 2022) — $\approx 71,144$ footprints
 3. **Western Ghats, India** (Nov 2020–Dec 2022) — $\approx 26,112$ footprints
 
+> [!NOTE]
+> **Upstream Google Earth Engine Script:**  
+> The data extraction is handled by [`gee_collection.js`](gee_collection.js). It pulls cloud-filtered Sentinel-2 imagery (`< 20%` cloud probability) and quality-filtered NASA GEDI LiDAR data (`quality_flag == 1`, non-urban), matches them spatially at $25\,\text{m}$ resolution across $1^\circ \times 1^\circ$ representative bounding boxes, and exports raw CSV datasets containing `['B2', 'B3', 'B4', 'B8', 'rh98', 'region']`.
+
 *Pre-processing highlights:*
 - Null handling across all spectral bands and target height `rh98`.
 - Outlier clipping for invalid LiDAR noise or cloud contamination, restricting `rh98` to $[0, 60]\,\text{m}$.
@@ -121,6 +125,7 @@ To verify the necessity of each Sentinel-2 band, we systematically trained model
 
 ```text
 ├── LVI_final.ipynb                   # Complete end-to-end data processing, training, & evaluation notebook
+├── gee_collection.js                 # Google Earth Engine script for Sentinel-2 & GEDI data extraction
 ├── LVI_BlackForest1.csv              # Input dataset: Black Forest region
 ├── LVI_Cerrado1.csv                  # Input dataset: Brazilian Cerrado region
 ├── LVI_WesternGhats1.csv             # Input dataset: Western Ghats region
