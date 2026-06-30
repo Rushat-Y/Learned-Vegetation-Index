@@ -1,0 +1,6 @@
+Model,RMSE,Pearson_r,R2
+NDVI (scaled),8.554,0.565,0.32
+EVI  (scaled),9.588,0.381,0.145
+SAVI (scaled),9.546,0.391,0.153
+XGBoost (LVI),6.656,0.767,0.588
+MLP (LVI),6.622,0.77,0.592
