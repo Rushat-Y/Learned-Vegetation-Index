@@ -1,9 +1,5 @@
 # Learned Vegetation Index (LVI)
 
-**Group 2 — DSE-A**  
-*Rushat Yadav (14), Anshika Goyal (37), Nischal Nori (26), Aviral Nigam (60), Vidushi Syal (55)*  
-*School of Computer Engineering, MIT, MAHE, Manipal*  
-
 *Predicting Forest Canopy Height Directly from Raw Sentinel-2 Spectral Bands*
 
 ---
