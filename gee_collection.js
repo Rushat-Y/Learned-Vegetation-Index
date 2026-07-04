@@ -167,6 +167,5 @@ Map.addLayer(cerrado, { color: 'orange' }, 'Cerrado Box');
 //Zoom out to see the entire world
 Map.setCenter(0, 20, 2);
 
-print('Script loaded successfully.');
-print('1. Check the Tasks tab to start your final 3 CSV exports.');
-print('2. Expect exports to take slightly longer (15-30 mins) due to the massive 2.5-year data pull.');
+print('Script loaded successfully');
+print('Check the Tasks tab to start your final 3 CSV exports');
