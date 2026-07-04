@@ -168,4 +168,4 @@ Map.addLayer(cerrado, { color: 'orange' }, 'Cerrado Box');
 Map.setCenter(0, 20, 2);
 
 print('Script loaded successfully');
-print('Check the Tasks tab to start your final 3 CSV exports');
+print('Check the Tasks tab to start your 3 CSV exports');
